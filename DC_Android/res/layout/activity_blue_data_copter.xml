@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dcbg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BlueDataCopter" >
+
+    <TextView
+        android:id="@+id/myLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/left"
+        android:layout_alignLeft="@+id/myLabel"
+        android:text="Stop" />
+
+    <TextView
+        android:id="@+id/ThrustStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Thrust"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:text="Speed:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Thrust"
+        android:layout_below="@+id/myLabel"
+        android:layout_marginTop="18dp"
+        android:text="Left" />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stop"
+        android:layout_alignBottom="@+id/stop"
+        android:layout_alignParentRight="true"
+        android:text="Right" />
+
+    <SeekBar
+        android:id="@+id/Thrust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/stop"
+        android:layout_marginTop="138dp" />
+
+</RelativeLayout>
